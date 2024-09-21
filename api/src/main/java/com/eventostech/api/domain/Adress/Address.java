@@ -20,10 +20,9 @@ public class Address {
     @Id
     @GeneratedValue
     private UUID id;
-
-    private String uf;
-
     private String city;
+    private String state;
+
 
     @OneToOne
     @JoinColumn ( name = "event_id")
